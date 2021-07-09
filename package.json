@@ -1,0 +1,26 @@
+{
+  "name": "udemy_typescript",
+  "version": "1.0.0",
+  "description": "Understanding TypeScript - 2021 Edition",
+  "main": "app.js",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthik-balasubramanyam15/Udemy_Typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthik-balasubramanyam15/Udemy_Typescript/issues"
+  },
+  "homepage": "https://github.com/karthik-balasubramanyam15/Udemy_Typescript#readme"
+}
