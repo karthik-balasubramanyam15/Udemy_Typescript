@@ -1,3 +1,21 @@
+//Enums - enum {New, old}
+// enum Role { ADMIN, READONLY, AUTHOR }; // 0,1,2 by default
+//enum Role { ADMIN = 6, READONLY, AUTHOR }; // auto inclement happens - 6, 7, 8 values respectively
+var Role;
+(function (Role) {
+    Role["ADMIN"] = "ADMIN";
+    Role[Role["READONLY"] = 5] = "READONLY";
+    Role[Role["AUTHOR"] = 6] = "AUTHOR";
+})(Role || (Role = {}));
+; // you can also mix and match numbers
+var peter = {
+    age: 29,
+    name: 'peter',
+    hobbies: ['Sports', 'Coding', 1, true, null, undefined],
+    role: 5
+};
+console.log(peter.role === Role.AUTHOR);
+console.log("---------------------------");
 //Arrays
 var man = {
     age: 29,
@@ -7,7 +25,7 @@ var man = {
 };
 // man.role[1] = 8 - error coz of invalid type
 man.role.push(8); //wont error - push has exception
-man.role.pop();
+man.role.pop(); ////wont error - array ops have exception
 console.log(man.role);
 var favorite = ['Cooking', 1, true, null, undefined]; //any type
 for (var _i = 0, _a = man.hobbies; _i < _a.length; _i++) {
