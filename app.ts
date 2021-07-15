@@ -1,3 +1,36 @@
+//Arrays
+const man: {
+    name: string,
+    age: number,
+    hobbies: (string | number | boolean)[],
+    role: [number, string] //array with fixed types and number of values - tuples
+} = {
+    age: 29,
+    name: 'Karu',
+    hobbies: ['Sports', 'Coding', 1, true, null, undefined], //hobbies: (string | number | boolean)[]
+    role: [29, 'admin']
+}
+
+// man.role[1] = 8 - error coz of invalid type
+man.role.push(8); //wont error - push has exception
+man.role.pop(); ////wont error - array ops have exception
+console.log(man.role)
+
+
+let favorite: any[] = ['Cooking', 1, true, null, undefined] //any type
+
+
+for (const hobby of man.hobbies) {
+    typeof hobby === 'string' ? console.log(hobby.toUpperCase()) : console.log(hobby)
+}
+console.log("---------------------------")
+for (const stuff of favorite) {
+    console.log(stuff)
+}
+console.log("---------------------------")
+
+
+
 function add(n1: number, n2: number) {
     return "Hello " + ((+n1) + (+n2)); //14
     //return "Hello " + (+n1) + (+n2); //77
@@ -39,3 +72,5 @@ const product = {
 }
 
 console.log(typeof product)
+
+
