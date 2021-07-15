@@ -1,5 +1,6 @@
 function add(n1: number, n2: number) {
-    return n1 + n2;
+    return "Hello " + ((+n1) + (+n2)); //14
+    //return "Hello " + (+n1) + (+n2); //77
 }
 
 const number1 = '7'
